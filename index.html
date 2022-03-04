@@ -16,33 +16,39 @@
             <span>Board A</span>
             <img src="./assets/arrow-down.svg" alt="down">
         </div>
-        <div class="sublinks hidden">
+        <div class="sublinks">
             <div class="sublink">
                 <span>Category 1</span>
+                <div class="category-color" id="cat1-personal"></div>
             </div>
             <div class="sublink">
                 <span>Category 2</span>
+                <div class="category-color" id="cat2-personal"></div>
             </div>
             <div class="sublink">
                 <span>Priority</span>
+                <img src="./assets/priority.svg" alt="">
             </div>
         </div>
         <div class="collapsible link">
             <span>Board B</span>
             <img src="./assets/arrow-down.svg" alt="down">
         </div>
-        <div class="sublinks hidden">
+        <div class="sublinks">
             <div class="sublink">
                 <span>Category 1</span>
+                <div class="category-color" id="cat1-professional"></div>
             </div>
             <div class="sublink">
                 <span>Category 2</span>
+                <div class="category-color" id="cat2-professional"></div>
             </div>
             <div class="sublink">
                 <span>Priority</span>
+                <img src="./assets/priority.svg" alt="">
             </div>
         </div>
-        <div class="link">
+        <div class="link active">
             <span>View All Boards</span>
             <img src="./assets/arrow-right.svg" alt="down">
         </div>
@@ -56,7 +62,131 @@
         </div>
     </nav>
     <main class="dashboard">
-        <h1>Hello World</h1>
+        <div class="user-container">
+            <div class="dropdown">
+            <img src="./assets/images/profile-picture.jpg" alt="user" class="profile-image">
+            <span>John Smith</span>
+            
+                <img src="./assets/arrow-down-black.svg" alt="" class="dropbtn">
+                <div class="dropdown-content">
+                    <a href="#">Account Settings</a>
+                    <a href="#">Notification Preferences</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="board-half" id="board-1">
+            <div class="board-title">
+                <h1>Personal</h1>
+            </div>
+            <div class="board-content">
+                <div class="list-item">
+                    <div class="completed">
+                        <input type="checkbox" checked>
+                        <span>Print out documents for self</span>
+                        </div>
+                        <img src="./assets/drag-icon.svg" class="drag-icon"/>
+                </div>
+                <div class="list-item" draggable="true">
+                    <div>
+                        <input type="checkbox">
+                        <span>Take out the trash.</span>
+                        </div>
+                        <img src="./assets/drag-icon.svg" class="drag-icon"/>
+                </div>
+                <div class="list-item" draggable="true">
+                    <div>
+                        <input type="checkbox">
+                        <span>Walk the dogs.</span>
+                        </div>
+                        <img src="./assets/drag-icon.svg" class="drag-icon"/>
+                </div>
+                <div class="list-item" draggable="true">
+                    <div>
+                        <input type="checkbox">
+                        <span>Take out the trash....again.</span>
+                        </div>
+                        <img src="./assets/drag-icon.svg" class="drag-icon"/>
+                </div>
+                <div class="list-item" draggable="true">
+                    <div>
+                        <input type="checkbox">
+                        <span>Food Prep.</span>
+                        </div>
+                        <img src="./assets/drag-icon.svg" class="drag-icon"/>
+                </div>
+                <div class="list-item add-icon">
+                    <div>
+                    <img src="./assets/add-icon.svg" alt="">
+                    <input type="text" placeholder="Add a task...">
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="board-half" id="board-2">
+            <div class="board-title">
+                <h1>Professional</h1>
+            </div>
+            <div class="board-content">
+                <div class="list-item">
+                    <div class="completed">
+                        <input type="checkbox" checked>
+                        <span>Prepare client email</span>
+                    </div> 
+                    <div class="icons-list">
+                        <span class="category-span">Category 1</span>
+                        <img src="./assets/priority.svg" alt="">
+                        <img src="./assets/drag-icon.svg" class="drag-icon"/>
+                    </div>
+                       
+                </div>
+                <div class="list-item" draggable="true">
+                    <div class="completed">
+                        <input type="checkbox" checked>
+                        <span>Send Invoice</span>
+                        </div>
+                        <div class="icons-list">
+                            <span class="category-span" style="background-color: rgb(8, 219, 247); color: rgb(8, 219, 247);">Category 2</span>
+                            <img src="./assets/drag-icon.svg" class="drag-icon"/>
+                        </div>
+                </div>
+                <div class="list-item" draggable="true">
+                    <div>
+                        <input type="checkbox">
+                        <span>Slam the printer.</span>
+                        </div>
+                        <img src="./assets/drag-icon.svg" class="drag-icon"/>
+                </div>
+                <div class="list-item" draggable="true">
+                    <div>
+                        <input type="checkbox">
+                        <span>Slam the printer....again.</span>
+                        </div>
+                        <img src="./assets/drag-icon.svg" class="drag-icon"/>
+                </div>
+                <div class="list-item" draggable="true">
+                    <div>
+                        <input type="checkbox">
+                        <span>Hang out by water cooler</span>
+                        </div>
+                        <img src="./assets/drag-icon.svg" class="drag-icon"/>
+                </div>
+                <div class="list-item" draggable="true">
+                    <div>
+                        <input type="checkbox">
+                        <span>Clock out early</span>
+                        </div>
+                        <img src="./assets/drag-icon.svg" class="drag-icon"/>
+                </div>
+                <div class="list-item add-icon">
+                    <div>
+                    <img src="./assets/add-icon.svg" alt="">
+                    <input type="text" placeholder="Add a task...">
+                </div>
+                </div>
+            </div>
+        </div>
+        </div>
     </main>
     <script src="script.js"></script>
 </body>
