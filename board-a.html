@@ -12,11 +12,11 @@
         <div class="logo-container">
             <h2>Dashboard</h2>
         </div>
-        <div class="collapsible link active" id="index.html">
-            <span>View All Boards</span>
-            <img src="./assets/arrow-down.svg" alt="down">
+        <div class="collapsible link">
+            <a href="/index.html">View All Boards</a>
+            <img src="./assets/arrow-right.svg" alt="down">
         </div>
-        <div class="sublinks">
+        <div class="sublinks hidden">
             <div class="sublink">
                 <span>Priority</span>
                 <img src="./assets/priority.svg" alt="">
@@ -35,11 +35,11 @@
                 <div class="category-color" id="cat1-professional"></div>
             </div>
         </div>
-        <div class="collapsible link">
-            <a href="/board-a.html">Board A</a>
-            <img src="./assets/arrow-right.svg" alt="down">
+        <div class="collapsible link active">
+            <span>Board A</span>
+            <img src="./assets/arrow-down.svg" alt="down">
         </div>
-        <div class="sublinks hidden">
+        <div class="sublinks">
             <div class="sublink">
                 <span>Priority</span>
                 <img src="./assets/priority.svg" alt="">
@@ -60,7 +60,7 @@
         </div>
         <div class="collapsible link">
             <span>Board B</span>
-            <img src="./assets/arrow-right.svg" alt="down" class="arrow-icon">
+            <img src="./assets/arrow-right.svg" alt="down">
         </div>
         <div class="sublinks hidden">
             <div class="sublink">
@@ -155,78 +155,11 @@
         </div>
         <div class="board-half" id="board-2">
             <div class="board-title">
-                <h1>Professional</h1>
+                <h1>Notes</h1>
             </div>
             <div class="board-content">
-                <div class="list-item">
-                    <div class="completed">
-                        <input type="checkbox" checked class="list-checkbox">
-                        <span>Prepare client email</span>
-                    </div> 
-                    <div class="icons-list">
-                        <span class="category-span">Category 1</span>
-                        <img src="./assets/flag-outline.svg" alt="" class="priority-icon not-selected">
-                        <img src="./assets/drag-icon.svg" class="drag-icon"/>
-                    </div>
-                       
-                </div>
-                <div class="list-item" draggable="true">
-                    <div class="completed">
-                        <input type="checkbox" checked>
-                        <span>Send Invoice</span>
-                        </div>
-                        <div class="icons-list">
-                            <span class="category-span" style="background-color: rgb(8, 219, 247); color: rgb(8, 219, 247);">Category 2</span>
-                            <img src="./assets/flag-outline.svg" alt="" class="priority-icon not-selected">
-                            <img src="./assets/drag-icon.svg" class="drag-icon"/>
-                        </div>
-                </div>
-                <div class="list-item" draggable="true">
-                    <div>
-                        <input type="checkbox">
-                        <span>Slam the printer.</span>
-                        </div>
-                        <div class="icons-list">
-                            <img src="./assets/flag-outline.svg" alt="" class="priority-icon not-selected">
-                            <img src="./assets/drag-icon.svg" class="drag-icon"/>
-                        </div>
-                </div>
-                <div class="list-item" draggable="true">
-                    <div>
-                        <input type="checkbox" class="list-checkbox">
-                        <span>Slam the printer....again.</span>
-                        </div>
-                        <div class="icons-list">
-                            <img src="./assets/flag-outline.svg" alt="" class="priority-icon not-selected">
-                            <img src="./assets/drag-icon.svg" class="drag-icon"/>
-                        </div>
-                </div>
-                <div class="list-item" draggable="true">
-                    <div>
-                        <input type="checkbox" class="list-checkbox">
-                        <span>Hang out by water cooler</span>
-                        </div>
-                        <div class="icons-list">
-                            <img src="./assets/flag-outline.svg" alt="" class="priority-icon not-selected">
-                            <img src="./assets/drag-icon.svg" class="drag-icon"/>
-                        </div>
-                </div>
-                <div class="list-item" draggable="true">
-                    <div>
-                        <input type="checkbox" class="list-checkbox">
-                        <span>Clock out early</span>
-                        </div>
-                        <div class="icons-list">
-                            <img src="./assets/flag-outline.svg" alt="" class="priority-icon not-selected">
-                            <img src="./assets/drag-icon.svg" class="drag-icon"/>
-                        </div>
-                </div>
-                <div class="list-item add-icon">
-                    <div>
-                    <img src="./assets/add-icon.svg" alt="">
-                    <input type="text" placeholder="Add a task...">
-                </div>
-                </div>
+                <textarea name="" id="" rows="30"></textarea>
+            </div>
             </div>
         </div>
         </div>

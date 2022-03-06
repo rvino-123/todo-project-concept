@@ -99,10 +99,16 @@ body::-webkit-scrollbar {
   align-items: center;
 }
 
+.link > a {
+  text-decoration: none;
+  color: var(--nav-text-color);
+}
+
 .category-color {
   width: 20px;
   height: 20px;
-  border: 1px solid black;
+  border: 2px solid black;
+  border-radius: 50%;
 }
 
 #cat1-personal {
@@ -118,7 +124,13 @@ body::-webkit-scrollbar {
   background-color: var(--category-2-professional-color);
 }
 
+.navmenu-add-button:hover {
+  cursor: pointer;
+}
+
 /* Main Content */
+
+/* Double Board View */
 
 .dashboard {
   padding: 1rem 2rem;
@@ -226,6 +238,10 @@ body::-webkit-scrollbar {
   color: var(--strikethrough-color);
 }
 
+.priority-icon:hover {
+  cursor: pointer;
+}
+
 .add-icon > div {
   display: flex;
   align-items: center;
@@ -265,4 +281,14 @@ body::-webkit-scrollbar {
   border-radius: 1rem;
   color: black;
   margin-left: 3rem;
+}
+
+/* Single Board View */
+
+.dashboard-single {
+  background-color: aliceblue;
+}
+
+.hidden {
+  display: none;
 }
